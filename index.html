@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="flag.png" type="image/png">
+    <a href="https://www.flaticon.com/free-icons/brasil" title="brasil icons"></a>
+    <title>Brasil - A</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div id="observablehq-viewof-filtro_ano-52e423d9" class="filt"></div>
+        <div id="observablehq-viewof-filtroClube-52e423d9"></div>
+        <div id="observablehq-viewof-filtroRegiao-52e423d9"></div>
+    </header>
+    <div class="card1">
+        <p class="label">Análise Estatística do Brasileirão Série A</p>
+    </div>
+    <div class="card">
+        <div id="observablehq-viewof-tab-52e423d9"></div>
+        <div class="card2">
+            <div id="observablehq-viewof-tab1-52e423d9"></div>
+            <p>Tabela de Acrescimo, relacionado com os resultados em campeonatos diferente, sendo somando a sua probabilidade</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card2">
+            <p>Força do clube naquele ano. Métricas levada em consideração: Ano, Colocaçao, Vitórias e Empates.</p>
+            <p>Força = Peso_Ano * Peso_Coloc * Vitórias + Empates</p>
+        </div>
+        <div id="observablehq-bolhas-52e423d9"></div>
+        
+    </div>
+    <div class="card">
+        
+        <div id="observablehq-scatter-52e423d9"></div>
+        <div class="card3">
+            <p>Linhas pontilhadas -> Média dos valores nos eixos</p>
+            <p class="bom">Bom Ataque e Defesa</p>
+            <p class="med">Bom Ataque e Defesa Fraca</p>
+            <p class="med1">Ataque fraco e Boa Defesa</p>
+            <p class="fra">Fraco Ataque e Defesa</p>
+        </div>
+    </div>
+    <div class="card">
+        <p>Mapa do Brasil com a soma das probabilidades dos clubes por suas regiões</p>  
+        <div id="observablehq-mapa_brasil_regiao_bolhas-52e423d9"></div>      
+    </div>
+    <div class="card">
+        <div id="observablehq-chart-52e423d9" class="rede"></div> 
+        <p>Maiores Artilheiros da tamporada e a Colocação do seu Clube</p></div>
+    <div class="card5">
+        <p>Média acumulada por ano da probabilidade dos principais clubes</p>
+        <p>Campeão ou Rebaixado no ano Seguinte</p>
+    </div>
+    <div class="card">
+        <div id="observablehq-barras-52e423d9"></div>
+        <div id="observablehq-barras_reb1-52e423d9"></div>
+    </div>
+    <footer>
+        <p>Conclusão:</p>
+        <p>1. Com base em todas as análises feitas, podemos observar que os melhores Artilheiros da tempoda tem uma correlação quanto ao rendimento do Clube para ser campeão naquele ano.</p>
+        <p>2. Quanto aos times com melhor ataque e defesa, sim, eles apresentam um correlação em seus desempenhos.</p>
+        <p>3. Levando em conta as regiões, temos uma relação referente os clubes com maiores chances de serem campeões no ano seguinte.</p>
+        <p>4. A relação entre os resultados de outros campeonatos não tem uma influência tão considerável. </p>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/7b9680efbe55ea25.js?v=4";
+        new Runtime().module(define, name => {
+        if (name === "viewof tab") return new Inspector(document.querySelector("#observablehq-viewof-tab-52e423d9"));
+        if (name === "viewof tab1") return new Inspector(document.querySelector("#observablehq-viewof-tab1-52e423d9"));
+        if (name === "viewof filtro_ano") return new Inspector(document.querySelector("#observablehq-viewof-filtro_ano-52e423d9"));
+        if (name === "viewof filtroClube") return new Inspector(document.querySelector("#observablehq-viewof-filtroClube-52e423d9"));
+        if (name === "viewof filtroRegiao") return new Inspector(document.querySelector("#observablehq-viewof-filtroRegiao-52e423d9"));
+        if (name === "barras") return new Inspector(document.querySelector("#observablehq-barras-52e423d9"));
+        if (name === "bolhas") return new Inspector(document.querySelector("#observablehq-bolhas-52e423d9"));
+        if (name === "scatter") return new Inspector(document.querySelector("#observablehq-scatter-52e423d9"));
+        if (name === "barras_reb1") return new Inspector(document.querySelector("#observablehq-barras_reb1-52e423d9"));
+        if (name === "mapa_brasil_regiao_bolhas") return new Inspector(document.querySelector("#observablehq-mapa_brasil_regiao_bolhas-52e423d9"));
+        if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-52e423d9"));
+        return ["clubes_por_ano","db_final","rebaixados_no_ano_seguinte","clubes_permaneceram","db_historico_valido","dados_ano","dadosFiltrados","dados_com_regiao","dadosPorRegiao","clubes1","db_media_rebaixamento","networkData","escalaRaio","mapaClubes","db_media_flat","dadosCompletos","db_top7_media","db_filtrado_regiao"].includes(name);
+        });
+    </script>
+</body>
+</html>

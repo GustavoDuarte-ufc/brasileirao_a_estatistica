@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    font-family: "Boldonse", system-ui;
+    font-weight: 100;
+    font-size: 0.7rem;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(24, 225, 239);
+    width: 100%;
+    padding: 1rem;
+    color: rgb(5, 27, 101);
+}
+
+.card1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 2rem 3rem 2rem;
+}
+
+p{
+    background-color: rgb(5, 27, 101);
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    font-family: "Boldonse", system-ui;
+}
+
+.label{
+    font-size: 2rem;
+    background-color: #011748;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.rede{
+    font-family: "Boldonse", system-ui;
+    font-weight: 100;
+    font-size: 0.7rem;
+}
+
+.card3{
+    display: flex;
+    flex-direction: column;
+}
+
+.bom{
+    color: #2ca02c;
+}
+.med{
+    color: #ff7f0e;
+}
+.med1{
+    color: #1f77b4;
+}
+.fra{
+    color: #d62728;
+}
+
+.card5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    p{
+        margin: 0;
+        background-color: #011748;
+    }
+}
+
+footer{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    p{
+        font-size: 1.5rem;
+    }
+}
