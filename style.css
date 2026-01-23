@@ -104,4 +104,86 @@ footer{
     p{
         font-size: 1.5rem;
     }
+
+}
+
+
+/* =========================
+   RESPONSIVIDADE - MOBILE
+   ========================= */
+@media (max-width: 768px){
+
+    /* HEADER */
+    .cabecalho{
+        position: static;           /* evita problemas no mobile */
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.6rem;
+        padding: 0.8rem;
+        text-align: center;
+    }
+
+    body{
+        padding-top: 0;             /* remove compensação do header */
+    }
+
+    /* TÍTULO PRINCIPAL */
+    .label{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    /* CARDS */
+    .card{
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .card1{
+        padding: 2rem 1rem;
+    }
+
+    .card2,
+    .card3,
+    .card5{
+        width: 100%;
+    }
+
+    /* TEXTOS */
+    p{
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+        text-align: center;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+
+    /* GRÁFICOS (Observable / D3) */
+    #observablehq-bolhas-52e423d9,
+    #observablehq-scatter-52e423d9,
+    #observablehq-barras-52e423d9,
+    #observablehq-barras_reb1-52e423d9,
+    #observablehq-chart-52e423d9,
+    #observablehq-mapa_brasil_regiao_bolhas-52e423d9{
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    /* REDE */
+    .rede{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px){
+    .label{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 0.85rem;
+    }
 }
